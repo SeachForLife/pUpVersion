@@ -1,7 +1,6 @@
 # pUpVersion
-自动升级的封装，可以直接调用</br>
-
-#演示图 
+自动升级的封装，可以直接调用
+# 演示图
 ![image](https://raw.githubusercontent.com/SeachForLife/pUpVersion/master/ScreenGif/pUpVersion.gif)
 
 # Android Studio 引用库示例
