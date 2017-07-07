@@ -2,8 +2,6 @@ package com.carl_yang.uplib;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
@@ -13,7 +11,6 @@ import android.widget.TextView;
 
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.FileCallback;
-import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.request.BaseRequest;
 
 import java.io.File;
@@ -150,9 +147,9 @@ public class UpdateAppManager {
                     }).create();
             failDialog.setCanceledOnTouchOutside(false);
             failDialog.setCancelable(false);
-            failDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK);
-            failDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK);
         }
         failDialog.show();
+        failDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK);
+        failDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK);
     }
 }
