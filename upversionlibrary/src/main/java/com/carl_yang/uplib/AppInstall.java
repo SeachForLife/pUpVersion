@@ -3,6 +3,9 @@ package com.carl_yang.uplib;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.content.FileProvider;
+import android.util.Log;
 
 import java.io.File;
 
@@ -20,7 +23,13 @@ public class AppInstall {
         Intent intent = new Intent();
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.setAction(Intent.ACTION_VIEW);
-        Uri uri=Uri.fromFile(file);
+        Uri uri;
+        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.N){
+            uri= FileProvider.getUriForFile(context,"com.carl_yang.uplib.versionProvider",file);
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        }else{
+            uri=Uri.fromFile(file);
+        }
         intent.setDataAndType(uri,
                 "application/vnd.android.package-archive");
         context.startActivity(intent);
