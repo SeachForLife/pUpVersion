@@ -1,7 +1,7 @@
-.gi# pUpVersion
+# pUpVersion
 自动升级的封装，可以直接调用
 
-#运行效果
+# 运行效果
 ![image](https://github.com/SeachForLife/pUpVersion/raw/master/ScreenGif/pUpVersion.gif)</br>
 
 # Android Studio 引用库示例
@@ -20,8 +20,8 @@
 
 
 ### 示例
-加入动态权限
-注册provider
+	加入动态权限
+	注册provider
 	        upVersions=new UpVersions()
                 .getInstance()
                 .setTitle("提示")
