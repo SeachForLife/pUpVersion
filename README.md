@@ -20,8 +20,9 @@
 
 
 ### 示例
-
-	        upVersions=new UpVersions()
+加入动态权限
+注册provider
+	        upVersions=new UpVersions()
                 .getInstance()
                 .setTitle("提示")
                 .setContent("有新版本需要更新！")
