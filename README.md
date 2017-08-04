@@ -1,3 +1,4 @@
+
 # pUpVersion
 自动升级的封装，可以直接调用
 
@@ -28,3 +29,7 @@
                 .setContent("有新版本需要更新！")
                 .setDownloadUrl("http://download.cntv.cn/app/cntv/cbox_androidguanwang_v6.1.70.apk")
                 .downAndUpApp(MainActivity.this);
+
+### 内容更新
+支持android6.0的动态权限特性
+支持android7.0的文件私有化
